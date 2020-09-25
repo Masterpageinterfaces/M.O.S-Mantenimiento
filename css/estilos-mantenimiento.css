@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    background-color: #353535;
+    background: radial-gradient(ellipse at bottom, #353535 0%, #090a0f 100% );
+
+}
+
+
+
+/*Menu de Navegación*/
+
+header {
+    padding: 12px 20px;
+}
+
+nav{
+    display: flex;
+    font-family: 'Roboto',sans-serif;
+    align-items: right;
+    justify-content: right;
+  
+}
+ul {
+    list-style: none;
+}
+
+ul a{
+    
+    color: #6C6E6C;
+}
+
+.nav-item {
+    border: 1px solid #484848;
+    border-radius:4px;
+    display: inline-block ;
+    padding: 10px 14px;
+}
+
+.nav-item:hover {
+    color: #f1f1f1;
+    border-bottom:0.5px solid #f1f1f1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*Fin de Menu de Navegación*/
+
+/*Arreglo de z-index para animacion */
+#page-wrap {
+	
+	margin: 0 auto;
+
+	z-index: 600;
+	
+	overflow: hidden;
+	
+}
+#page-wrap2 {
+	
+
+	
+    position: relative;
+	z-index: 600;
+
+	overflow: hidden;
+	
+	
+}
+#page-wrap3 {
+	
+
+	
+	position: relative;
+	z-index: 600;
+	
+	overflow: hidden;
+
+	
+}
+
+/*Animacion Estrellas*/
+@keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
+}
+#background {
+	background: url(../images/midground.png) repeat 5% 5%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 200;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 120s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#midground {
+	background: url(../images/midground.png) repeat 20% 20%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 200;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 150s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#foreground {
+	background: url(../images/foreground.png) repeat 35% 35%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 300;
+	
+	animation-name: STAR-MOVE;
+	animation-duration: 100s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/*Boton de animacion*/
+
+/*Escena de animacion*/
+
+
+
+
+/*Keyframes de animacion interactiva*/
+
+
+
+/*Logo con Slogan publicitario*/
+
+.section1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 19px auto 12% auto;
+}
+.contenedordeimagenes {
+    margin:auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ 
+}
+.contenedordeimagenes .logo1 {
+    display: flex;
+    justify-content: end;
+    width: 66%;
+    height: 66%;
+    
+}
+
+.contenedordeimagenes .logoprincipal {
+    width: 50%;
+}
+
+.contenedordeimagenes .logo2 {
+    width: 34%;
+   
+}
+
+.contenedordeimagenes .ovni {
+    width: 45%;
+}
+
+h1.Primertitulo {
+    font-family: 'Roboto',sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.contenedordetexto1 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 11px;
+   font-weight: 300;
+    text-align: center;
+    color: #f1f1f1;
+    margin: 15px auto;
+    width: 50%;
+}
+
+
+.contenedordebotones {
+    width: 26%;
+    margin: 25px auto;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: row;
+    
+}
+
+.contenedordebotones .boton1contacto {
+    padding: 13px 54px;
+    background:linear-gradient(-45deg,#82938F,#8A8B81);
+    border-radius: 6px;
+    
+}
+
+.contenedordebotones .boton1contacto  {
+    font-family:'Roboto',sans-serif;
+    font-weight: bold;
+ text-decoration: none;
+ color: #f1f1f1;
+ transition:0.2s ;
+}
+
+.contenedordebotones .boton1contacto:hover {
+    color: #fff;
+   
+    box-shadow: 0 0 9px white;
+   
+}
+
+ .boton2icono  {
+     margin-left: 10px;
+    padding: 17.5px 13px 9.5px 13px;
+    background:linear-gradient(-45deg,#82938F,#8A8B81);
+   border-radius: 6px;
+    
+}
+.boton2icono:hover  {
+     
+    color: #fff;
+
+    
+    box-shadow: 0 0 7px white;
+    
+}
+
+/* Fin de Mensaje de mantenimiento*/
+
+
+
+
+/* Footer*/
+
+
+footer{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;}
+      
+.footer-final {
+    padding: 20px; }
+        
+.footer-enlaces {
+    padding: 20px; }
+
+.footer-enlaces a {
+    margin-left: 10px;
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color:#fff}
+
+.footer-enlaces a:hover{
+    transition: all 0.9s ease-in;
+    transform: translateY(-4px);
+    border-bottom: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1; }
+
+/* fin footer*/
